@@ -1,0 +1,1106 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+.hero-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/cheesenaan1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cheesenaan1.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
+}
+
+.hero-text {
+  font-size: larger;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero__container {
+  height: 100%;
+}
+/* hero class is the design of the header of every page which control it margin and font size to let it bigger. 
+The most important kis the header size and content is consistency.*/
+
+.foodCard__container {
+  max-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.foodCard__container .foodCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.foodCard__container .foodCard .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.foodCard__container .foodCard .face.face1 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.foodCard__container .foodCard .face.face1 h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.foodCard__container .foodCard .face.face1 .foodCard__1 {
+  background-color: #FCE205;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foodCard__container .foodCard .face.face1 .foodCard__2 {
+  background-color: #FCE205;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foodCard__container .foodCard .face.face1 .foodCard__3 {
+  background-color: #FCE205;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foodCard__container .foodCard .face.face2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.foodCard__container .foodCard .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.foodCard__container .foodCard:hover .face.face2 {
+  height: 60px;
+}
+
+.foodCard__container .foodCard:hover .face.face2 h2 {
+  font-size: 2em;
+}
+
+.foodCard__container .foodCard:nth-child(1) .face.face2 {
+  background-image: url("../img/nasi2.jpg");
+  border-radius: 15px;
+}
+
+.foodCard__container .foodCard:nth-child(2) .face.face2 {
+  background-image: url("../img/roti3.jpg");
+  border-radius: 15px;
+}
+
+.foodCard__container .foodCard:nth-child(3) .face.face2 {
+  background-image: url("../img/teh2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+/* all these food card titled class is a design of the card animation display section from index.html as known as the Home page,
+Its make them align and the animation of when the mouse is pointing to them, after the pointing it will display the descrition. */
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px 150px;
+  padding: 100px 200px;
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 5px solid #ffffff
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.card__desc {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__desc:hover::after {
+  width: 100%;
+}
+
+.card__title {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card-1 {
+  background: radial-gradient(#413f3f, #000000);
+}
+
+.card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 50px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+}
+/* The card titled class is the design of the about us from the index.html
+as known as home page which contain the different background color(gradient) and the justify content make it center
+to let the reader more easy to read  */
+.footer {
+  position: relative;
+  max-width: 100vw;
+  background: #000000;
+  min-height: 100px;
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  -webkit-animation: animateWaves 4s linear infinite;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  -webkit-animation: animate 4s linear infinite !important;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  -webkit-animation: animateWaves 3s linear infinite;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  -webkit-animation: animate 3s linear infinite;
+  animation: animate 3s linear infinite;
+}
+
+@-webkit-keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+/* the footer titled class and the wave is the footer section of every pages as we can see 
+they have the same design and content so it is consistency. */
+.video__container {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  z-index: 9999999;
+}
+/* this video container titled class is only display on the Home page and it is been displayed at the down left side,
+this design is to prevent the video blocking the reader or user reading the content and 
+he/she can learn more about our product/service from this video when they saw */
+.beverageImage__container {
+  height: 100%;
+  width: 30%;
+  position: relative;
+  padding-right: 50px;
+}
+
+#beverageImage {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-card__container:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+
+.menu-card__container:nth-child(2) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+
+.menu-card__container:nth-child(5) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+
+.menu-card__container:nth-child(6) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  /* span from grid column line 1 to 3 (i.e., span 2 columns) */
+}
+
+.selector {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0px 50px;
+}
+
+.selector img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: solid 2px #000000;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+.selector h1 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #bdd6d2;
+  font-size: 1.5rem;
+}
+
+.selector ul {
+  margin: 15px 0;
+  padding-left: 30px;
+  line-height: 1.5rem;
+  list-style-type: square;
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.foodInfo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.price__list li {
+  list-style-type: none;
+}
+
+.menu-card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-self: center;
+  width: 100%;
+}
+
+.menu-card {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  color: #586875;
+  background-color: #f4f7f7;
+  -webkit-box-shadow: 0 10px 20px #0006;
+  box-shadow: 0 10px 20px #0006;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  /* important to use a symmetrical timing function (linear also works) */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* beverageImage__container is the design of the menu beverage site because it is different from others,
+the selector is the whole menu margin and padding which is a section
+the menu-card container is the menu food site( nasi lemak, roti, maggi
+and it also make the price have consistency places. */
+
+.joinUs__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+#box__small-title {
+  font-size: 20px;
+}
+
+.box__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-row: 2 / 4;
+  height: 300px;
+}
+
+.box h2 {
+  height: 30px !important;
+}
+
+.joinUs__container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.joinUs__container .attribution a {
+  color: #3e52a3;
+}
+
+.joinUs__container h1:first-of-type {
+  font-weight: 200;
+  color: darkblue;
+}
+
+.joinUs__container h1:last-of-type {
+  color: darkblue;
+}
+
+.joinUs__container .header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.joinUs__container .header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: #a3a5ae;
+}
+
+.joinUs__container .box p {
+  color: #a3a5ae;
+}
+
+.joinUs__container .box h2 {
+  color: #000;
+  height: 100%;
+}
+
+.joinUs__container .box {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 30px 40px -20px #86878e;
+  box-shadow: 0px 30px 40px -20px #a3a5ae;
+  border-top: 3px solid #000000;
+  padding: 30px;
+  margin: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.joinUs__container img {
+  height: 100px;
+  width: 100px;
+}
+
+.joinUs__container h2 {
+  color: #000000;
+  font-weight: 600;
+}
+
+.joinUs__container .row-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 10%;
+}
+
+.joinUs__container .box {
+  display: grid;
+  grid-template-columns: 3fr;
+  height: 100%;
+}
+
+
+.joinUs__card label {
+  position: absolute;
+}
+
+.joinUs__card {
+
+  position: relative;
+  margin: 50px 16px;
+  width: 100%;
+
+}
+
+.card-data {
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: rgb(135, 134, 134);
+  text-align: center;
+  padding: 16px 70px;
+  box-shadow: 0 4px 2px -2px #8b8888b3;
+
+}
+
+.card-data h3 {
+  font-size: 32px;
+  color: #000000;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.card-data form ul {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+}
+
+.card-data form ul li {
+  margin: 16px 0;
+}
+
+.card-data form ul li i {
+  display: inline-block;
+  vertical-align: bottom;
+  border: 1px solid #000000;
+  padding: 3px 8px;
+  width: 12%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.card-data input[type="text"] {
+  width: 71%;
+  border: 1px solid #000000;
+  padding: 8px 8px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000000;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 12px;
+  opacity: .5;
+}
+/* JoisUs titled class is contain the whole contain in the Career/Joinus web page also the degin make it have consistency height and width,
+ the box is divided the 4 different career which we have as vacancy and the container is the submit form to someone is interested. */
+
+.review__container {
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.snip1568 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 14px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.snip1568:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.snip1568:nth-child(even) figcaption::after {
+  content: '';
+  position: absolute;
+  left: 99.5%;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #333333 transparent transparent transparent;
+  transform: rotate(270deg);
+}
+
+.snip1568:nth-child(even) figcaption {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.snip1568 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1568 .profile-image img {
+  border-radius: 5px;
+  width: 125px;
+  height: 100px;
+  vertical-align: top;
+  float: left;
+}
+
+.snip1568 figcaption {
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.snip1568 figcaption::after {
+  content: '';
+  position: absolute;
+  left: -12.5px;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #333333 transparent transparent transparent;
+  transform: rotate(90deg);
+}
+
+.snip1568 h3,
+.snip1568 h4,
+.snip1568 p {
+  margin: 0 0 5px;
+}
+
+.snip1568 h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.snip1568 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1568 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.person__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.snip1568 i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.snip1568 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+/* the snip involved class is the design of the review page which decide different font-size and design 
+to differ the name and he/she's comment and also there have the margin setting between header and footer. */
+
+.map__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.location__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.location__container img {
+  height: 196px;
+  width: 182px;
+}
+
+.location {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 700px;
+}
+
+.location h2 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.location h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.location-image {
+  background-color: #2A265F;
+  color: #fff;
+  max-width: 250px;
+}
+
+.location-image a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.location-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+/* the map titled class is the display of the live location as we can see in the location page which make the user convenience to
+know which location is the nearest to them,
+the location titled class is the 3 different location using the same design and also decide for the font size for the place at and the address. */
+
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: Montserrat, Aleo, Helvetica, Arial, sans-serif;
+  background-color: #FCE205;
+  width: 100% !important;
+}
+/* the consistency design of body which have the same background-color as known as main color is yellow
+and the padding and margin let it more suitable to see and the last and important is the same design of font make it more tidy */
+
+#trapezoid {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 80px solid rgba(0, 0, 0, 0);
+  border-top: 0 solid;
+  border-bottom: 100px solid rgba(1, 1, 1, 0.4);
+  border-radius: 20px 20px 0 0;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-overflow: clip;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-top: -53px;
+  width: 1000px;
+  position: relative;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  padding-left: 21%;
+
+}
+
+#trapezoid a,
+.subnavbtn {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+#trapezoid:hover .sub-home {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 53px;
+}
+
+.navbar {
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sub-home {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: perspective(-10px);
+  transform: perspective(-10px);
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 25px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: #FCE205;
+  color: black;
+  border-radius: 5px;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: perspective(-10px);
+  transform: perspective(-10px);
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background: #B993D6;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#upBtn {
+  margin-top: 10px;
+  position: relative;
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #FCE205;
+  /* Set a background color */
+  color: #000000;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#upBtn:hover {
+  background-color: #000000;
+  color: #FCE205;
+  border: solid 2px #FCE205;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.recommended-icon {
+  position: relative;
+  top: 7px;
+  padding-left: 2px;
+  color: #000000;
+}
+
+.lit-icon {
+  position: relative;
+  top: 5px;
+  color: red;
+}
+/* it is the last added icon as a recommendation or the past few month hottest meals in menu to let customer 
+easier to choose what they want to eat. */

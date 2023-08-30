@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1024">
+  <title>Location</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar">
+    <div id="trapezoid">
+      <a href="./index.html" class="expandHome">Home</a>
+      <a href="./menu.html" class="expandHome">Menu</a>
+      <a href="./joinUs.html" class="expandHome">Join Us</a>
+      <a href="./location.html" class="expandHome">Location</a>
+      <a href="./review.html" class="expandHome">Review</a>
+    </div>
+  </nav>
+<!-- header -->
+  <header>
+    <a href="./index.html">
+      <div class="hero__container">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>ABC MAMAK</h1>
+          </div>
+        </div>
+      </div>
+    </a>
+  </header>
+<!-- the location where we loacted list down -->
+  <div class="location__container">
+    <div class="location">
+      <div class="location-image">
+        <img src="./img/abc_balakong.jpeg" alt="abc balakong">
+      </div>
+      <div class="location-info">
+        <h2>ABC Balakong</h2>
+        <h3>2, Medan Taming Sari 3, Taman Taming Jaya, 43300 Balakong, Selangor
+        </h3>
+      </div>
+    </div>
+    <div class="location">
+      <div class="location-image">
+        <img src="./img/abc_dpetaling.jpg" alt="abc balakong">
+      </div>
+      <div class="location-info">
+        <h2>ABC Desa Petaling</h2>
+        <h3>2, Jalan 9/125d, Desa Petaling, 57100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+        </h3>
+      </div>
+    </div>
+    <div class="location">
+      <div class="location-image">
+        <img src="./img/abc_puchong.jpg" alt="abc balakong">
+      </div>
+      <div class="location-info">
+        <h2>ABC Cheras</h2>
+        <h3>2-2A, Jalan Seri Taming 1e, Taman Seri Taming, 43200 Cheras, Selangor
+        </h3>
+      </div>
+    </div>
+  </div>
+  <!-- a live map which can tell the user which of our restaurant is the nearest to them -->
+  <div class="map__container">
+    <h1>You Are Here</h1>
+    <div id="map">
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+
+    <p>&copy;2022 ABC Mamak | All Rights Reserved</p>
+    <p>Email to: <a href="mailto:abcmamak@gmail.com">abcmamak@gmail.com</a></p>
+    <p>
+      <a href="index.html">
+        <img style="border:0;width:60px;height:45px;float: inline-start;" src="./img/icon_310x310.png" alt="abcLogo">
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="Valid CSS!">
+      </a>
+    </p>
+    <button onclick="topFunction()" id="upBtn" title="Back to top">Back To Top</button>
+
+  </footer>
+  <!-- a script to get the user location, and a back to top button -->
+  <script src="./js/main.js"></script>
+  <script>
+    var x = document.getElementById("map");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "<p>Geolocation is not supported by this browser.</p>";
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = `<iframe width="100%" height="500" 
+      frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=${position.coords.latitude},${position.coords.longitude}&key=AIzaSyBlgHgbUkNGYyoIL_0_F-VYThc_u_NJJd8" allowfullscreen></iframe>`
+    }
+    getLocation()
+  </script>
+
+</body>
+
+</html>
